@@ -79,7 +79,7 @@ public class DragAndDropHTML5 {
 			
 			      String javaScript = buffer.toString();
 			
-			      javaScript = javaScript + "$('" + source + "').simulateDragDrop({ dropTarget: '" + target + "'});";
+			      javaScript = javaScript + "window.jQuery('" + source + "').simulateDragDrop({ dropTarget: '" + target + "'});";
 			      ((JavascriptExecutor)webDriver).executeScript(javaScript);
 			      
 			      
